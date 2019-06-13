@@ -4,6 +4,7 @@ import 'app/component/icon_tab.dart';
 import 'app/view/company/company_view.dart';
 import 'app/view/jobs_view.dart';
 import 'app/view/message_view.dart';
+import 'app/view/mine_view.dart';
 //过渡页
 class HomePage extends StatefulWidget{
     @override
@@ -43,7 +44,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
             //选项卡试图
             body: TabBarView(
                 children: <Widget>[
-                    JobsTab(),CompanyTab(),MessageTab(),JobsTab()
+                    JobsTab(),CompanyTab(),MessageTab(),MineTab()
                 ],
                 //绑定controller
                 controller: mController,
